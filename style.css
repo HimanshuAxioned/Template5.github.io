@@ -66,7 +66,11 @@ html { font-family: Arial, Helvetica, sans-serif; }
   -webkit-font-smoothing: antialiased;
 }
 
-a { text-decoration: none; }
+a { 
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+ }
 
 h2 {
   width: 80%;
@@ -77,8 +81,16 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  padding: 5% 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 900;
+}
+
 p { 
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #ffffff;
   line-height: 2em;
   align-items: center;
@@ -168,6 +180,63 @@ nav {
   text-align: center;
 }
 
-.banner-para p {
-  margin: 5%;
+.banner-para p { margin: 5%; }
+
+/* section world-ocean */
+.world-ocean{ display: flex; }
+
+.world-ocean-content {
+  width: 50%;
+  position: relative;
+  background-color: #6cb3dd;
+  text-align: center;
 }
+
+.world-ocean-content p { padding: 10%; }
+
+.world-ocean-content > a { 
+  margin: 5%;
+  padding: 1em 1em;
+  background: #ffffff;
+}
+
+.world-ocean-content ul{
+  width: 100%;
+  border-top: 1px solid #808080;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+}
+
+.world-ocean-content li { 
+  width: 50%;
+  padding: 2%;
+  display: flex;
+}
+
+.world-ocean-content address , span {
+  padding: 0 1%;
+  border-left: 2px solid #808080 ;
+  text-transform: capitalize;
+  font-size: 1.2em;
+}
+
+.location::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.calender::before {
+  content: "\f133";
+  font-family: "Font Awesome 5 Free";
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.world-ocean figure { width: 50%;}
+
+.world-ocean figure > img { width: 100%; }
+
+
