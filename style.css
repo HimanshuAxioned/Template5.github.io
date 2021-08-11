@@ -89,6 +89,33 @@ h3 {
   font-weight: 900;
 }
 
+h4 {
+  padding: 5% 0;
+  position: relative;
+  color: #d3d3d3;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 900;
+}
+
+h4::after{
+  content: "";
+  width: 5%;
+  margin: 1.5em;
+  padding-bottom: 5px;
+  position: absolute;
+  left: 45%;
+  background-color: #5fb0dd;
+}
+
+h5 {
+  padding: 5% 0;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 900;
+}
+
 p { 
   font-size: 0.9em;
   color: #ffffff;
@@ -216,7 +243,6 @@ nav {
 
 .world-ocean-content address , span {
   padding: 0 1%;
-  border-left: 2px solid #808080 ;
   text-transform: capitalize;
   font-size: 1.2em;
 }
@@ -240,3 +266,69 @@ nav {
 .world-ocean figure > img { width: 100%; }
 
 
+/* section featured */
+
+.featured { margin: 5% 10%; }
+
+.featured-container {
+  display: flex;
+}
+
+.featured-container p{
+  color: black;
+  font-size: 0.9em;
+}
+
+.featured-list {
+  width: 40%;
+  text-align: center;
+}
+
+.featured-list li{
+  padding: 5%;
+}
+
+.featured-list p { 
+  color: black;
+  font-size: 0.9em;
+  text-transform: none;
+}
+
+.featured-content {
+  width: 60%;
+  margin: 5%;
+  padding: 2% 5%;
+  background: #aedad1;
+  position: relative;
+}
+
+.featured-content h5 > span {
+  color: #a9a9a9;
+  float: right;
+  font-size: 0.8em;
+}
+
+.featured-content li > div {
+  width: 70%;
+  border: 1px solid #739b73;
+}
+
+.notepad::before{
+  content: "\f044";
+  padding: 0.3em;
+  background: #739b73;
+  font-family: "Font Awesome 5 Free";
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.featured-button{
+  padding: 1em 1em;
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+  background-color: #fff;
+
+}
+
+.featured-content2 { display: none; }
