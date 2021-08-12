@@ -280,7 +280,6 @@ nav {
 
 .location::before {
   content: "\f3c5";
-
   padding: 0.7em;
   border-right: 1px solid  #808080;
   font-family: "Font Awesome 5 Free";
@@ -324,11 +323,11 @@ nav {
   overflow-y: scroll;
 }
 
-.featured-scroller::-webkit-scrollbar-thumb{
+/* .featured-scroller::-webkit-scrollbar-thumb{
   width: 12em;
   height: 70vh;
 
-} 
+}  */
 
 
 .featured-list {
@@ -349,10 +348,11 @@ nav {
 }
 
 .featured-list > li::before{
-  content: "";
-  width: 2em;
-  border-radius: 50%;
-  background-color: rgb(82, 17, 17);
+  content: "\f111";
+  position: absolute;
+  left: -2%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
 }
 
 .featured-list p { 
