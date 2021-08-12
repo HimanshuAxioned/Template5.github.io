@@ -407,3 +407,90 @@ nav {
 
 .featured-content2 { display: none; }
 
+/*  section infographic */
+
+.infographic {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.infographic-content { 
+  width: 100%;
+  position: relative;
+}
+
+.infographic-slider{
+  width: 110%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+}
+
+.info-slide {
+  width: 40%;
+  margin: 1%;
+  padding: 15% 5%;
+  padding-bottom: 5%;
+  text-align:center;
+}
+
+.info-slide div{
+  margin: 0 auto;
+  background-color: #dad2d2;
+}
+
+.info-slide h6 {
+  padding: 10%;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.info-slide p {
+  color: #000000;
+  font-size: 0.85em;
+}
+
+.right-arrow::before {
+  content: "\f138";
+  font-family: "Font Awesome 5 Free";
+  font-size: xx-large;
+  font-weight: 900;
+  padding: 5%;
+}
+
+.info1 { background: url("https://via.placeholder.com/300");}
+
+.info2 { background: url("https://via.placeholder.com/300");}
+
+.info3 { background: url("https://via.placeholder.com/300");}
+
+.controller {
+  width: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 30%;
+  background: #b6d2e2;
+}
+
+
+
+.controller ul{
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.controller ul > li {
+  padding: 0.5em;
+}
+
+.line { width: 33.33%;}
+
+.active { 
+  width: 10%;
+  position:absolute;
+  left: 5%;
+  background: #6cb3dd;
+}
+
+
