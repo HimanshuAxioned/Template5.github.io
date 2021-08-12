@@ -147,21 +147,20 @@ header { position: relative; }
    
  }
 
-nav {
-  width: 44.6%;
-  margin-left: 20.5%;
+ nav {
+  width: 48.9%;
+  margin-left: 19.5%;
 }
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .nav-list li {  text-align: center;}
 
 .nav-list a {
   font-size: 0.7em;
-  padding: 0 1em;
+  padding: 0 1.8em;
   color: #aeb5b8;
   text-transform: uppercase;
 }
@@ -224,7 +223,10 @@ nav {
 .banner-para p { margin: 6%; }
 
 /* section world-ocean */
-.world-ocean{ background-color: #6cb3dd; }
+.world-ocean{ 
+  position: relative;
+  background-color: #6cb3dd;
+ }
 
 .world-wrapper {  display: flex;  }
 
@@ -239,8 +241,9 @@ nav {
   padding-bottom: 4%;
 }
 
-.world-ocean-content > a { 
-  margin-top: 5%;
+.world-ocean-content > a {
+  margin: 5% 0;
+  margin-bottom: 15%;
   padding: 1.5em 2.5em;
   display: inline-block;
   background: #ffffff;
@@ -269,12 +272,11 @@ nav {
 }
 
 
-.world-ocean-content address , span {
+.world-ocean-content address, span {
   text-transform: capitalize;
-  font-size: 1.2em;
-  margin: 0 auto;
+  font-size: 0.75em;
+  padding: 0 1em;
 }
-
 
 
 
@@ -297,11 +299,15 @@ nav {
   font-weight: 900;
 }
 
-.world-ocean figure { width: 50%;}
-
-.world-ocean figure > img { 
-  object-fit: cover; }
-
+.world-ocean figure { 
+  width: 50%;
+  padding: 15.15%;
+  position: absolute;
+  left: 50%;
+  background-image: url("https://via.placeholder.com/601x364");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* section featured */
 
@@ -410,19 +416,21 @@ nav {
 /*  section infographic */
 
 .infographic {
-  padding-bottom: 50%;
-  position: relative;
+  padding-bottom: 10%;
 }
+
+.infographic > div { position:  relative;}
 
 .infographic-content { 
   width: 100%;
   position: relative;
+  right: 0%;
+  overflow: hidden;
 }
 
 .infographic-slider{
   width: 110%;
   display: flex;
-  position: absolute;
   justify-content: space-between;
 }
 
@@ -458,16 +466,28 @@ nav {
   padding: 5%;
 }
 
-.info1 { background: url("https://via.placeholder.com/300");}
+.info1 { 
+  background: url(https://via.placeholder.com/300);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.info2 { background: url("https://via.placeholder.com/300");}
+.info2 { 
+  background: url(https://via.placeholder.com/300);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
 
-.info3 { background: url("https://via.placeholder.com/300");}
+.info3 { 
+  background: url(https://via.placeholder.com/300);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
 
 .controller {
   width: 50%;
+  margin: 5% 0;
   position: absolute;
-  bottom: 5%;
   left: 30%;
   background: #b6d2e2;
 }
@@ -537,3 +557,151 @@ input {
   font-weight: 900;
 }
 
+/* footer */
+
+footer { background: rgb(36, 34, 34);}
+
+.footer-content { 
+  display: flex;
+  align-items: center;
+}
+
+.footer-content h6 {
+  padding: 3% 0;
+  color: #808080;
+  font-size: 1em;
+}
+
+.footer-content ul {
+  width: 25%;
+  margin-left: 45% ;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.facebook::before {
+  content: "\f39e";
+  color: #808080 ;
+  font-family: "Font Awesome 5 Brands";
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.twitter::before {
+  content: "\f099";
+  color: #808080 ;
+  font-family: "Font Awesome 5 Brands";
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.google-plus::before {
+  content: "\f0d5";
+  color: #808080 ;
+  font-family: "Font Awesome 5 Brands";
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.linkedin::before {
+  content: "\f0e1";
+  color: #808080 ;
+  font-family: "Font Awesome 5 Brands";
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.footer-content > a {
+  padding: 1em 1.5em;
+  margin-left: 1%;
+  color: #ffffff;
+  background-color: #808080;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    width: 61%;
+    margin-left: 10.5%;
+  }
+}
+
+@media screen and (max-width: 920px){
+	nav { 
+    font-size: 0.8em;
+   }
+  
+  h2 { font-size: 2em; }
+
+  .world-wrapper { flex-direction: column;}
+
+  .world-ocean-content { 
+    width: 100%;
+    padding: 10%;
+  }
+
+  .world-ocean-content ul { 
+    left: 0%;
+    border-bottom: 1px solid #808080;
+  }
+
+  .world-ocean figure { 
+    width: 100%;
+  }
+
+  .featured-content li > div {
+    width: 100%;
+  }
+
+  .world-ocean figure > img { width: 100%;}
+
+  .infographic {
+    padding-bottom: 60%;
+  }
+
+  .footer-content h6 {
+    font-size: 0.55em;
+  }
+  
+}
+
+@media screen and (max-width: 540px){
+
+  
+	.header-content { 
+    flex-direction: column;
+   }
+
+  nav{
+    font-size: 1em;
+    padding-left: 0 ;
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-list li::after { content: none; }
+
+  .header-content > a::before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: none;
+      
+  }
+
+  .hamburger::before { display: block; }
+
+  h2 { font-size: 1em; }
+
+  p { line-height: 1.2em; }
+
+  .banner-para { transform: translate(69.5%,-30.5%); }
+
+  .banner { margin-bottom: 50.5%; }
+}
