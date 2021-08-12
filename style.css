@@ -493,4 +493,47 @@ nav {
   background: #6cb3dd;
 }
 
+/* section input-form */
+
+.input-form {
+  padding: 5%; 
+  background: #6cb3dd;  
+}
+
+form {
+  width: 60%; 
+  margin: 0 auto;
+  
+} 
+
+label { display: block; }
+
+form div { 
+  width: 100%;
+  margin: 2% 0;
+  position: relative;
+}
+
+input {
+  width: 90%;
+  padding: 3%;
+  border: 1px;
+  background-color: #8fc9eb;
+}
+
+::-webkit-input-placeholder { 
+  color: #0b2c3d;
+  text-transform: capitalize;
+}
+
+.paper-plane::before {
+  content: "\f1d8";
+  padding: 0.3em;
+  position: absolute;
+  right: 10%;
+  background-color: #ffffff;
+  font-family: "Font Awesome 5 Free";
+  font-size: xx-large;
+  font-weight: 900;
+}
 
