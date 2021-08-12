@@ -83,7 +83,7 @@ h2 {
 }
 
 h3 {
-  padding: 9%;
+  padding: 9% 0;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 1.6em;
@@ -154,7 +154,6 @@ nav {
 .nav-list a {
   font-size: 0.7em;
   padding: 0 1em;
-  /* color: #5fb0dd; */
   color: #aeb5b8;
   text-transform: uppercase;
 }
@@ -217,46 +216,66 @@ nav {
 .banner-para p { margin: 6%; }
 
 /* section world-ocean */
-.world-ocean{ background-color: #6cb3dd;}
+.world-ocean{ background-color: #6cb3dd; }
 
 .world-wrapper {  display: flex;  }
 
 .world-ocean-content {
   width: 50%;
-  position: relative;
+  position: relative; 
   text-align: center;
 }
 
-.world-ocean-content p { padding: 0 10%; }
+.world-ocean-content p { 
+  padding:0 10%;
+  
+}
 
 .world-ocean-content > a { 
-  margin: 5%;
-  padding: 1em 1em;
+  margin-top: 5%;
+  padding: 1.5em 2.5em;
+  display: inline-block;
   background: #ffffff;
+  font-size: 0.8em;
+}
+
+.world-ocean-content > a:hover {
+  background: #ffff00;
+
 }
 
 .world-ocean-content ul{
-  width: 100%;
+  width: 103.5%;
   border-top: 1px solid #808080;
   display: flex;
   position: absolute;
+  left: -3.5%;
   bottom: 0;
+  align-items: center;
 }
 
 .world-ocean-content li { 
   width: 50%;
-  padding: 2%;
   display: flex;
+  align-items: center;
+  text-align: center;
 }
 
+
 .world-ocean-content address , span {
-  padding: 0 1%;
   text-transform: capitalize;
   font-size: 1.2em;
+  margin: 0 auto;
 }
+
+
+
 
 .location::before {
   content: "\f3c5";
+
+  padding: 0.7em;
+  border-right: 1px solid  #808080;
   font-family: "Font Awesome 5 Free";
   font-size: x-large;
   font-weight: 900;
@@ -264,6 +283,9 @@ nav {
 
 .calender::before {
   content: "\f133";
+  padding: 0.7em;
+  border-right: 1px solid  #808080;
+  border-left: 1px solid  #808080;
   font-family: "Font Awesome 5 Free";
   font-size: x-large;
   font-weight: 900;
@@ -271,7 +293,8 @@ nav {
 
 .world-ocean figure { width: 50%;}
 
-.world-ocean figure > img { width: 100%; }
+.world-ocean figure > img { 
+  object-fit: cover; }
 
 
 /* section featured */
