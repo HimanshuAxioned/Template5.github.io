@@ -115,13 +115,12 @@ h4::after{
 h5 {
   padding: 5% 0;
   text-transform: uppercase;
-  font-size: 1.6em;
+  font-size: 1.1em;
   font-weight: 900;
 }
-
 h6 {
   text-transform: uppercase;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 900;
 }
 
@@ -148,8 +147,9 @@ header { position: relative; }
  }
 
  nav {
-  width: 48.9%;
-  margin-left: 19.5%;
+
+    width: 49.3%;
+    margin-left: 19.5%;
 }
 
 .nav-list {
@@ -311,7 +311,11 @@ header { position: relative; }
 
 /* section featured */
 
-.featured { margin: 3% 10%; }
+.featured {
+  margin: 0 10%;
+  margin-top: 3%;
+}
+
 
 .featured-container {
   display: flex;
@@ -323,7 +327,7 @@ header { position: relative; }
 
 .featured-scroller {
   width: 40%;
-  height: 70vh;
+  height: 76vh;
   overflow: hidden;
   position: relative;
   overflow-y: scroll;
@@ -336,13 +340,14 @@ header { position: relative; }
 }  */
 
 
+
 .featured-list {
   width: 100%;
   height: 120vh;
+  margin: 0 2.5%;
   padding: 0 3%;
   position: absolute;
-  border-left: 1px solid  #808080 ;
-  text-align: center;
+  border-left: 1px solid #808080;
 }
 
 
@@ -351,35 +356,99 @@ header { position: relative; }
   margin: 5%;
   padding: 5% 5%;
   border: 1px solid  #808080;
+  color: black;
+  position: relative;
 }
 
-.featured-list > li::before{
+.featured-list > li::before {
   content: "\f111";
   position: absolute;
-  left: -2%;
+  /* user translate for center dots */
+  top: 50%;
+  transform: translateY(-50%);
+  left: -13%;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  
 }
 
-.featured-list p { 
+.featured1::before {
+  color: #cde2e6;
+}
+
+.featured2::before {
+  color: #798856;
+}
+
+.featured3::before {
+  color: #d47585;
+}
+
+.featured4::before {
+  color: #47bae7;
+}
+
+.featured5::before {
+  color: #47bae7;
+}
+
+.featured6::before {
+  color: #798856;
+}
+
+.featured7::before {
+  color: #d47585;
+}
+
+.featured1:hover { 
+  background: #cde2e6 ;
+}
+
+.featured2:hover { 
+  background: #798856 ;
+}
+
+.featured3:hover { 
+  background: #d47585 ;
+}
+
+.featured4:hover { 
+  background: #47bae7 ;
+}
+
+.featured5:hover { 
+  background: #47bae7 ;
+}
+
+.featured6:hover { 
+  background: #cde2e6 ;
+}
+
+.featured7:hover { 
+  background: #d47585 ;
+}
+
+.featured-list p {
   color: black;
   font-size: 0.75em;
   text-transform: none;
+  padding: 2% 0;
 }
 
 .featured-content {
   width: 60%;
-  margin: 5%;
+  margin: 0 5%;
+  margin-bottom: 25%;
   padding: 2% 5%;
-  background: #aedad1;
-
+  background: #cde2e6;
 }
 
+
 .featured-content h5 > span {
-  font-size: 0.6em;
+  font-size: 0.8em;
   color: #a9a9a9;
   float: right;
-  }
+}
 
 .featured-content li > div {
   width: 55%;
@@ -406,7 +475,7 @@ header { position: relative; }
 
 .featured-button{
   margin: 10% 5%;
-  padding: 1em 1em;
+  padding: 1.3em 2em;
   display: inline-block;
   background-color: #fff;
 }
@@ -418,6 +487,8 @@ header { position: relative; }
 .infographic {
   padding-bottom: 10%;
 }
+
+.infographic h4 { padding-top: 0; }
 
 .infographic > div { position:  relative;}
 
@@ -486,9 +557,10 @@ header { position: relative; }
 
 .controller {
   width: 50%;
-  margin: 5% 0;
+  margin-top: 3%;
+  margin-bottom: 6%;
   position: absolute;
-  left: 30%;
+  left: 25%;
   background: #b6d2e2;
 }
 
@@ -501,7 +573,7 @@ header { position: relative; }
 }
 
 .controller ul > li {
-  padding: 0.5em;
+  padding: 0.4em;
 }
 
 .line { width: 33.33%;}
@@ -521,12 +593,15 @@ header { position: relative; }
 }
 
 form {
-  width: 60%; 
+  width: 50%;
   margin: 0 auto;
-  
-} 
+}
 
-label { display: block; }
+label {
+  display: block;
+  color: #b8e2fb;
+  font-size: 0.75em;
+}
 
 form div { 
   width: 100%;
@@ -536,7 +611,7 @@ form div {
 
 input {
   width: 90%;
-  padding: 3%;
+  padding: 3.5%;
   border: 1px;
   background-color: #8fc9eb;
 }
@@ -559,7 +634,7 @@ input {
 
 /* footer */
 
-footer { background: rgb(36, 34, 34);}
+footer { background: #242222;}
 
 .footer-content { 
   display: flex;
@@ -621,11 +696,17 @@ footer { background: rgb(36, 34, 34);}
 
 /* responsive */
 
-@media only screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1024px) {
   nav {
-    width: 61%;
+    width: 65%;
     margin-left: 10.5%;
   }
+
+  .world-ocean figure {
+    padding: 16%;
+}
+
 }
 
 @media screen and (max-width: 920px){
@@ -647,29 +728,67 @@ footer { background: rgb(36, 34, 34);}
     border-bottom: 1px solid #808080;
   }
 
-  .world-ocean figure { 
+  .world-ocean figure {
     width: 100%;
-  }
+    margin: 1%;
+    padding: 25% 0;
+    position: relative;
+    left: -1%;
+}
+
+.featured-list {
+  margin: 0 4%;
+}
+
+.featured-list > li::before {
+  left: -4%;
+}
 
   .featured-content li > div {
     width: 100%;
   }
 
+  .featured-content h5 > span {
+    font-size: 0.7em;
+  }
+
   .world-ocean figure > img { width: 100%;}
 
   .infographic {
-    padding-bottom: 60%;
-  }
+    padding-bottom: 10%;
+}
+
+.paper-plane::before {
+  padding: 0.1em;
+}
 
   .footer-content h6 {
     font-size: 0.55em;
   }
+
+  .footer-content ul {
+    margin-left: 35%;
+}
   
+}
+
+@media screen and (max-width: 720px) { 
+
+  nav { margin-left: 5%;}
+
+  .nav-list a { padding: 0 0.5em; }
 }
 
 @media screen and (max-width: 540px){
 
-  
+
+  h2 { font-size: 1em; }
+
+  h4 { font-size: 1.2em; }
+
+
+p { line-height: 1.2em; }
+
 	.header-content { 
     flex-direction: column;
    }
@@ -697,11 +816,59 @@ footer { background: rgb(36, 34, 34);}
 
   .hamburger::before { display: block; }
 
-  h2 { font-size: 1em; }
-
-  p { line-height: 1.2em; }
-
   .banner-para { transform: translate(69.5%,-30.5%); }
 
   .banner { margin-bottom: 50.5%; }
+
+  .world-ocean-content > a {
+    padding: 1.5em 1.5em;
 }
+
+  .featured { margin: 0 1%;}
+
+  .featured-list > li::before {
+    left: -5.5%;
+  }
+
+  .featured-content h5 > span {
+    display: block;
+    color: #a9a9a9;
+    font-size: 0.8em;
+  }
+
+  .featured-content  p { margin: 5%; }
+
+  .featured-content span { font-size: 0.59em;}
+
+  form { width: 90%; }
+
+  .footer-content ul { margin-left: 20%; }
+  
+  .facebook::before { font-size: small; }
+
+  .twitter::before { font-size: small; }
+
+  .google-plus::before { font-size: small; }
+
+  .linkedin::before { font-size: small; }
+
+  .footer-button { font-size: 0.6em; }
+
+}
+
+@media screen and (max-width: 375px) {
+
+.footer-content ul { margin-left: 10%; }
+
+.footer-button { font-size: 0.5em;}
+
+.world-ocean { overflow: hidden; }
+
+.featured-content span { font-size: 0.51em; }
+
+.featured-button { padding: 1.3em 1.5em; }
+
+input { padding: 4%; }
+
+}
+
